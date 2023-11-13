@@ -14,6 +14,21 @@ Once you have Poetry installed, navigate to the module's root directory and run 
 poetry install
 ```
 
+This will create a new virtual environment and install all the necessary dependencies.
+
+## Usage
+
+```python
+import ContactsParser
+
+# Download a web page
+webpage_content = ContactsParser.download_webpage("https://example.com")
+
+# Find phone numbers
+phone_numbers = ContactsParser.find_phone_numbers(webpage_content)
+print(phone_numbers)
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
